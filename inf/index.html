@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科科快餐點餐價格表</title>
+    <style>
+        h1 {
+            font-size: 36px;
+            font-weight: bolder;
+            color: blue;
+            text-align: center;
+        }
+        
+        table {
+            margin: auto;
+        }
+        
+        caption {
+            font-size: 36px;
+            font-weight: bolder;
+            color: blue;
+            text-align: center;
+        }
+        
+        table td {
+            border-style: dashed;
+            border-width: 1px;
+        }
+        
+        tr {
+            color: green;
+            font-family: Arial;
+            font-size: 18px;
+        }
+        
+        td {
+            border-style: dotted;
+            border-width: 1px;
+            padding: 10px;
+            color: green;
+        }
+        
+        table {
+            BORDER-LEFT: black 1PX dashed;
+            BORDER-RIGHT: black 1PX DASHED;
+            BORDER-TOP: black 1PX DASHED;
+            BORDER-BOTTOM: black 1PX DASHED;
+        }
+        
+        .ex {
+            BORDER-LEFT: white 2PX dashed;
+            BORDER-RIGHT: white 2PX DASHED;
+            BORDER-TOP: white 2PX DASHED;
+            BORDER-BOTTOM: white 2PX DASHED;
+        }
+        
+        .ex1 {
+            font-weight: bolder;
+            font-size: 18px;
+            color: purple;
+            text-align: center
+        }
+    </style>
+    <script language="javascript">
+        document.write("<table>");
+        document.write("<caption>MIS快餐點餐價格表</caption>");
+        document.write("<tr><td class='ex'></td>");
+        j = 8;
+        for (i = 5; i >= 1; i--) {
+            if (j >= 8) {
+                document.write("<td class='ex1'>" + "<p>" + i + "號餐</p>" + "<p>" + j + "元</p>" + "</td>");
+                j = j + 3;
+            }
+        }
+        document.write("<tr>");
+
+        for (i = 3; i <= 7; i++) {
+            document.write("<tr>");
+            document.write("<td class='ex1'>" + i + "</td>");
+
+            for (j = 8; j <= 20; j = j + 3) {
+                document.write("<td>");
+                document.write(i + "*" + j + "=" + i * j);
+                document.write("</td>");
+
+            }
+            document.write("<tr>");
+        }
+
+        document.write("</table>");
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
